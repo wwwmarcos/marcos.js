@@ -8,7 +8,7 @@ if (process.argv.indexOf('init') === -1) {
   console.log(JSON.stringify(about, null, 2))
 } else {
   var name = process.argv[process.argv.indexOf('init') + 1] + '.js'
-  var pathName = path.join(__dirname, name)
+  var pathName = path.join(process.cwd(), name)
 
   if (fs.existsSync(pathName)) {
     console.log('Sorry, a folder with this name already exists!')

@@ -10,4 +10,5 @@ This command will create a folder with your `name.js`, just edit `about.json` wi
 
 # publish your name.js
 
+`npm login`
 `npm publish`
