@@ -1,12 +1,5 @@
 #!/usr/bin/env node
 
-console.log(JSON.stringify({
-  name: 'Marcos Florencio',
-  github: 'https://github.com/eptaccio',
-  twitter: 'https://twitter.com/eptaccio',
-  linkedin: 'https://www.linkedin.com/in/marcoseff',
-  facebook: false,
-  telegram: 'https://telegram.me/eptaccio',
-  email: 'eptaccio@gmail.com',
-  medium: 'https://medium.com/@eptaccio'
-}, null, 2))
+const about = require('./about')
+
+console.log(JSON.stringify(about, null, 2))
